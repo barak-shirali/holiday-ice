@@ -1,0 +1,349 @@
+body {
+  background: url(/images/bg.png) fixed center top no-repeat;
+  background-size: cover;
+  margin: 0px auto;
+  padding: 0px;
+  width: 768px;
+}
+
+body, table {
+  color: #000000;
+  font: 300 20px/26px montserrat, sans-serif;
+}
+
+h3 {
+  font: 300 26px/32px montserrat, sans-serif;
+  margin: 0px 0px 10px;
+  padding: 0px;
+  text-align: center;
+}
+
+p {
+  margin: 0px 0px 20px;
+  padding: 0px;
+}
+
+input[type=text], input[type=submit], input[type=email], input[type=number], textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+header {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.30);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1000;
+}
+
+header .logo {
+  display: block;
+  height: 60px;
+  margin: 0px auto;
+  width: auto;
+}
+
+header .sponsor {
+  display: block;
+  height: 25px;
+  left: 40px;
+  position: absolute;
+  top: 20px;
+  width: auto;
+}
+
+header .production {
+  font: 300 12px/20px montserrat, sans-serif;
+  position: absolute;
+  right: 40px;
+  text-align: right;
+  text-transform: uppercase;
+  top: 20px;
+}
+
+#banner {
+  background: #8ad4f7;
+  box-sizing: border-box;
+  font: 300 18px/25px montserrat, sans-serif;
+  padding: 20px 40px 15px;
+}
+
+#banner h2 {
+  color: #db0000;
+  font: 400 50px/60px shrikhand, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#banner div {
+  float: right;
+}
+
+footer {}
+
+footer img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.content-big {
+  font: 800 36px/42px montserrat, sans-serif;
+  padding: 30px 40px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-big span, #results span {
+  text-transform: none;
+}
+
+.content-big .user {
+  color: #db0000;
+}
+
+.content {
+  padding: 30px 40px 10px;
+  text-transform: uppercase;
+}
+
+#results {
+  background: #ffffff;
+  color: #f98282;
+  font: 800 28px/32px montserrat, sans-serif;
+  margin: 0px 0px 40px;
+  padding: 60px 40px 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#results big {
+  color: #db0000;
+  display: block;
+  font: 300 120px/120px montserrat, sans-serif;
+  margin: 0px 0px 40px;
+}
+
+#results form {
+  margin: 0px;
+  padding: 0px;
+}
+
+#results input[type=text] {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #db0000;
+  font: 300 120px/120px montserrat, sans-serif;
+  height: 160px;
+  margin: -20px auto 20px;
+  padding: 18px 0px;
+  text-align: center;
+  width: 320px;
+}
+
+.big-button {
+  background: #000000;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-block;
+  font: 800 30px/40px montserrat, sans-serif;
+  margin: 0px auto;
+  padding: 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.history {
+  margin: 0px auto 40px;
+  text-transform: none;
+  width: 100%;
+}
+
+.history td {
+  background: #ffffff;
+  font: 300 20px/30px montserrat, sans-serif;
+  padding: 25px 0px;
+  text-align: center;
+  width: 22%;
+}
+
+.history tr td:last-of-type {
+  width: 34%;
+}
+
+.history tr:nth-of-type(even) td {
+  background: #c2d1d9;
+}
+
+.history-header {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.history-header td {
+  font: 300 20px/30px montserrat, sans-serif;
+  padding: 25px 0px;
+  text-align: center;
+  width: 22%;
+}
+
+.history-header tr td:last-of-type {
+  width: 34%;
+}
+
+.big-red {
+  background: #db0000;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  font: 800 34px/40px montserrat, sans-serif;
+  margin: 0px 0px 40px;
+  padding: 25px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.leaderboard {
+  margin: 0px auto 40px;
+  text-transform: none;
+  width: 100%;
+}
+
+.leaderboard td {
+  background: #ffffff;
+  font: 300 20px/30px montserrat, sans-serif;
+  padding: 20px 0px;
+  text-align: center;
+  width: 34%;
+}
+
+.leaderboard tr td:first-of-type {
+  width: 22%;
+}
+
+.leaderboard tr td:last-of-type {
+  width: 44%;
+}
+
+.leaderboard tr:nth-of-type(even) td {
+  background: #c2d1d9;
+}
+
+.leaderboard-header {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.leaderboard-header td {
+  font: 300 20px/30px montserrat, sans-serif;
+  padding: 25px 0px;
+  text-align: center;
+  width: 33%;
+}
+
+.leaderboard-header tr td:first-of-type {
+  width: 22%;
+}
+
+.leaderboard-header tr td:last-of-type {
+  width: 44%;
+}
+
+.leaderboard span {
+  background: #db0000;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: shrikhand, montserrat, sans-serif;
+  font-size: 28px;
+  margin: -10px auto;
+  padding: 10px 0px;
+  text-align: center;
+  text-shadow: 2px 2px 0px #000000;
+  width: 50px;
+}
+
+.info {
+  margin: 0px;
+  padding: 0px;
+}
+
+.info input[type=submit] {
+  background: #000000;
+  border: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font: 800 30px/40px montserrat, sans-serif;
+  margin: 0px auto;
+  padding: 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.info-white {
+  background: #ffffff;
+  margin: 0px 0px 40px;
+  padding: 50px 40px 20px;
+}
+
+.info-white table {
+  width: 100%;
+}
+
+.info-white table td:first-of-type {
+  color: #f98282;
+  font: 800 28px/32px montserrat, sans-serif;
+  padding: 0px 0px 30px;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.info-white table td:last-of-type {
+  padding: 0px 0px 30px;
+  width: 60%;
+}
+
+
+.info-white input[type=text] {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #db0000;
+  font: 300 42px/50px montserrat, sans-serif;
+  margin: 0px;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.social-table {
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.img-alaska-airlines {
+  height: 20px;
+  width: auto;
+}
+
+.table-hader-content {
+  border-bottom: 1px solid #000000;
+  margin-top: -20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
