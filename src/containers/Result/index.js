@@ -22,7 +22,7 @@ export class UserInfo extends Component {
       return null;
     }
     const title = `Skate-O-Meter Result by ${userInfoById.firstname} ${userInfoById.lastname}.`;
-    const url = `http://ice.fordhaminc.com/result/${params.id}`;
+    const url = `http://www.skateometer.com/result/${params.id}`;
     const desc = `I burned ${userInfoById.calories_burned} calories on skating!`;
     const encodedDesc = encodeURIComponent(desc);
 
@@ -34,7 +34,7 @@ export class UserInfo extends Component {
           <meta property="og:title" content={title} />
           <meta property="og:description" content={desc} />
           <meta property="og:type" content="image" />
-          <meta property="og:image" content="http://ice.fordhaminc.com/images/logo.png" />
+          <meta property="og:image" content="http://www.skateometer.com/images/logo.png" />
           <meta property="og:image:width" content="200" />
           <meta property="og:image:height" content="150" />
           <meta name="twitter:card" content="summary" />
