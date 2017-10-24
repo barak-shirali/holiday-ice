@@ -2,7 +2,7 @@
 
 import React from 'react';
 import type { Element } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import _ from 'lodash';
 
@@ -30,7 +30,7 @@ const App = (): Element<'div'> => {
     <div>
       <Helmet {...config.app} />
       <header>
-        <img src="/images/logo.png" alt="Holiday Ice Rink" className="logo" />
+        <Link to="/"><img src="/images/logo.png" alt="Holiday Ice Rink" className="logo" /></Link>
         <img src="/images/safeway.png" alt="Safeway" className="sponsor" />
         <div className="production">
           A Willy Bietak Production<br />

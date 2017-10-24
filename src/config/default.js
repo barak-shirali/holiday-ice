@@ -3,12 +3,12 @@ module.exports = {
   port: process.env.PORT,
   app: {
     htmlAttributes: { lang: 'en' },
-    title: 'Skate-O-Meter',
-    titleTemplate: 'Skate-O-Meter - %s',
+    title: 'Holiday Ice Link',
+    titleTemplate: 'Holiday Ice Link - %s',
     meta: [
       {
         name: 'description',
-        content: 'Skate-O-Meter',
+        content: 'Holiday Ice Link',
       },
     ],
   },

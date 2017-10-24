@@ -315,7 +315,7 @@ footer img {
 }
 
 
-.info-white input[type=text] {
+.info-white input.input {
   background: #ffffff;
   border: 2px solid #000000;
   border-radius: 0px;
@@ -330,6 +330,7 @@ footer img {
 .social-table {
   font-size: 32px;
   line-height: 50px;
+  margin: 0px 0px 40px; width: 100%;
 }
 
 .img-alaska-airlines {
@@ -337,7 +338,7 @@ footer img {
   width: auto;
 }
 
-.table-hader-content {
+.table-header-content {
   border-bottom: 1px solid #000000;
   margin-top: -20px;
   padding-bottom: 0px;
@@ -346,4 +347,26 @@ footer img {
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.form-button-wrapper {
+  padding: 0px 40px 40px;
+}
+
+.share-your-result {
+  padding: 0px 40px;
+  text-align: center;
+  width: 50%;
+}
+
+.social-buttons {
+  font-size: 46px;
+  padding: 0px 40px;
+  text-align: center;
+  width: 50%;
+}
+
+.leaderboard td a, .social-buttons a {
+  color: #000 !important;
+  text-decoration: none!important;
 }

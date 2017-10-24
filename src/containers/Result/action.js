@@ -7,25 +7,25 @@ import type {
   Reducer,
 } from '../../types';
 
-export const USER_REQUESTING = 'USER_REQUESTING';
-export const USER_FAILURE = 'USER_FAILURE';
-export const USER_SUCCESS = 'USER_SUCCESS';
+export const RESULT_REQUESTING = 'RESULT_REQUESTING';
+export const RESULT_FAILURE = 'RESULT_FAILURE';
+export const RESULT_SUCCESS = 'RESULT_SUCCESS';
 
-export const API_URL = 'https://jsonplaceholder.typicode.com/users';
+export const API_URL = 'https://7i4kp145i0.execute-api.us-west-2.amazonaws.com/prod/skateometer';
 
 // Export this for unit testing more easily
-export const fetchUser = (userId: string, axios: any, URL: string = API_URL): ThunkAction =>
+export const fetchResult = (userId: string, axios: any, URL: string = API_URL): ThunkAction =>
   (dispatch: Dispatch) => {
-    dispatch({ type: USER_REQUESTING, userId });
+    dispatch({ type: RESULT_REQUESTING, userId });
 
     return axios.get(`${URL}/${userId}`)
-      .then(res => dispatch({ type: USER_SUCCESS, userId, data: res.data }))
-      .catch(err => dispatch({ type: USER_FAILURE, userId, err: err.message }));
+      .then(res => dispatch({ type: RESULT_SUCCESS, userId, data: res.data[0] }))
+      .catch(err => dispatch({ type: RESULT_FAILURE, userId, err: err.message }));
   };
 
 // Using for preventing dobule fetching data
 /* istanbul ignore next */
-const shouldFetchUser = (state: Reducer, userId: string): boolean => {
+const shouldFetchResult = (state: Reducer, userId: string): boolean => {
   // In development, we will allow action dispatching
   // or your reducer hot reloading won't updated on the view
   if (__DEV__) return true;
@@ -33,18 +33,18 @@ const shouldFetchUser = (state: Reducer, userId: string): boolean => {
   const userInfo = state.userInfo[userId];
 
   // Preventing dobule fetching data in production
-  if (userInfo && userInfo.readyStatus === USER_SUCCESS) return false;
+  if (userInfo && userInfo.readyStatus === RESULT_SUCCESS) return false;
 
   return true;
 };
 
 /* istanbul ignore next */
-export const fetchUserIfNeeded = (userId: string): ThunkAction =>
+export const fetchResultIfNeeded = (userId: string): ThunkAction =>
   (dispatch: Dispatch, getState: GetState, axios: any) => {
     /* istanbul ignore next */
-    if (shouldFetchUser(getState(), userId)) {
+    if (shouldFetchResult(getState(), userId)) {
       /* istanbul ignore next */
-      return dispatch(fetchUser(userId, axios));
+      return dispatch(fetchResult(userId, axios));
     }
 
     /* istanbul ignore next */

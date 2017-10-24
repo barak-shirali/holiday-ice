@@ -4,6 +4,7 @@ import React, { PureComponent } from 'react';
 import type { Element } from 'react';
 import { connect } from 'react-redux';
 import type { Connector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 import * as action from './action';
@@ -59,7 +60,7 @@ export class Leaderboard extends PureComponent<Props> {
           {this.renderLeaderboard()}
         </div>
         <div className={styles.EnterYourInfo}>
-          <a href="enter-info.php" className="big-button">Enter Your Info</a>
+          <Link className="big-button" to="/enter-info">Enter Your Info</Link>
         </div>
       </div>
     );

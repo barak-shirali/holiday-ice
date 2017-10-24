@@ -25,6 +25,8 @@ const Html = ({ store, htmlContent }: Props): Element<'html'> => {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,800|Shrikhand" />
+        <script src="https://use.fontawesome.com/0e07d52df5.js" />
 
         {head.title.toComponent()}
         {head.base.toComponent()}
