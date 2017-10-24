@@ -19,7 +19,7 @@ export const createUser =
     dispatch({ type: CREATE_USER_REQUESTING });
 
     // @TODO calculate calories
-    const calories = timeSkated * weight;
+    const calories = Math.round((timeSkated * weight * 0.453 * 6 * 3.5) / 200);
 
     return axios.post(API_URL, {
       skater: [

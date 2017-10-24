@@ -275,7 +275,7 @@ footer img {
   padding: 0px;
 }
 
-.info input[type=submit] {
+.info input[type=submit], .info button {
   background: #000000;
   border: none;
   box-sizing: border-box;
@@ -289,6 +289,10 @@ footer img {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
+}
+
+.info button:disabled {
+  opacity: .7;
 }
 
 .info-white {

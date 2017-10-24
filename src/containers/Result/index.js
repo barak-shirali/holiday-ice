@@ -16,7 +16,7 @@ export class UserInfo extends Component {
 
   render() {
     const { userInfo, match: { params } } = this.props;
-    const userInfoById = userInfo[params.id].info;
+    const userInfoById = userInfo[params.id] && userInfo[params.id].info;
 
     if (!userInfoById) {
       return null;

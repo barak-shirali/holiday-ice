@@ -42,6 +42,8 @@ export class EnterInfo extends Component {
       weight,
       timeSkated,
     } = this.state;
+    const isLoading = this.props.readyStatus === action.CREATE_USER_REQUESTING;
+    console.log(this.props.readyStatus);
 
     return (
       <div>
@@ -75,7 +77,10 @@ export class EnterInfo extends Component {
             </table>
           </div>
           <div className="form-button-wrapper">
-            <input type="submit" value="Submit" />
+            <button type="submit" disabled={isLoading}>
+              {isLoading && <span><i className="fa fa-spinner fa-spin" /> Submitting...</span>}
+              {!isLoading && 'Submit'}
+            </button>
           </div>
         </form>
       </div>
@@ -84,7 +89,7 @@ export class EnterInfo extends Component {
 }
 
 const connector = connect(
-  () => ({}),
+  ({ createUser }) => ({ readyStatus: createUser.readyStatus }),
   dispatch => ({
     createUser: (...args) => dispatch(action.createUser(...args)),
   }),
