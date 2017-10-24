@@ -34,7 +34,7 @@ export class UserInfo extends Component {
           <meta property="og:title" content={title} />
           <meta property="og:description" content={desc} />
           <meta property="og:type" content="image" />
-          <meta property="og:image" content="https://ice.fordhaminc.com/images/logo.png" />
+          <meta property="og:image" content="http://ice.fordhaminc.com/images/logo.png" />
           <meta property="og:image:width" content="200" />
           <meta property="og:image:height" content="150" />
           <meta name="twitter:card" content="summary" />

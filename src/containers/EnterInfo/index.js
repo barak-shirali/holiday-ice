@@ -31,7 +31,7 @@ export class EnterInfo extends Component {
 
     this.props.createUser(firstName, lastInitial, weight, timeSkated)
       .then((resp) => {
-        console.log(resp);
+        this.props.history.push(`/result/${resp.data[5]}`);
       });
   }
 
